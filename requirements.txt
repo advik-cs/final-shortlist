@@ -1,0 +1,10 @@
+﻿pdfplumber
+sentence-transformers
+torch
+rank-bm25
+scikit-learn
+rapidfuzz
+python-dateutil
+numpy
+pandas
+streamlit
