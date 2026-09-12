@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Color Palette based on provided specifications:
+     Eucalyptus: #98AA9D
+     Mist: #B3C9D6
+     Plaster: #F2EFE2
+     Soot: #2D3536
+     Moss: #697C70
+     Blue Chalk: #D8EFFE
+     Jagged Ice: #C2E9E5
+     Cloudy Blue: #ADBED2
+  */
+  --color-eucalyptus: #98AA9D;
+  --color-mist: #B3C9D6;
+  --color-plaster: #F2EFE2;
+  --color-soot: #2D3536;
+  --color-moss: #697C70;
+  --color-blue-chalk: #D8EFFE;
+  --color-jagged-ice: #C2E9E5;
+  --color-cloudy-blue: #ADBED2;
+
+  --color-primary: #2D3536;
+  --color-canvas: #F4F2EB;
+  --color-surface: #FFFFFF;
+  --color-accent: #697C70;
+  --color-accent-light: #F2EFE2;
+  --color-text-main: #2D3536;
+  --color-text-muted: #64736E;
+  --color-border-soft: #D9DFDC;
+}
+
+@keyframes ambient-mesh {
+  0% {
+    background-position: 0% 0%, 100% 0%, 50% 100%, 0% 50%;
+  }
+  25% {
+    background-position: 30% 20%, 70% 30%, 30% 80%, 80% 20%;
+  }
+  50% {
+    background-position: 60% 40%, 40% 60%, 80% 60%, 40% 80%;
+  }
+  75% {
+    background-position: 40% 80%, 80% 20%, 20% 40%, 60% 30%;
+  }
+  100% {
+    background-position: 0% 0%, 100% 0%, 50% 100%, 0% 50%;
+  }
+}
+
+@keyframes subtle-float-slow {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -20px) scale(1.05);
+  }
+  66% {
+    transform: translate(-25px, 20px) scale(0.97);
+  }
+}
+
+@keyframes subtle-float-reverse {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-35px, 25px) scale(1.04);
+  }
+  66% {
+    transform: translate(20px, -25px) scale(0.96);
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F3F1EA;
+  background-image: 
+    radial-gradient(ellipse 65% 50% at 10% 10%, rgba(186, 208, 220, 0.45), transparent 70%),
+    radial-gradient(ellipse 60% 45% at 90% 15%, rgba(152, 170, 157, 0.35), transparent 65%),
+    radial-gradient(ellipse 55% 55% at 50% 85%, rgba(194, 233, 229, 0.4), transparent 70%),
+    radial-gradient(ellipse 70% 60% at 85% 90%, rgba(242, 239, 226, 0.8), transparent 70%);
+  background-size: 160% 160%;
+  animation: ambient-mesh 32s ease-in-out infinite alternate;
+  background-attachment: fixed;
+  color: #2D3536;
+  overflow-x: hidden;
+}
+
+/* Custom subtle refined scrollbar matching the palette */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #EAE7DC;
+}
+::-webkit-scrollbar-thumb {
+  background: #B9C5BE;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #98AA9D;
+}
+

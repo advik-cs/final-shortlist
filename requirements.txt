@@ -1,4 +1,4 @@
-﻿pdfplumber
+pdfplumber
 sentence-transformers
 torch
 rank-bm25
@@ -8,3 +8,6 @@ python-dateutil
 numpy
 pandas
 streamlit
+fastapi
+uvicorn
+python-multipart

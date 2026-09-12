@@ -1,0 +1,5 @@
+{
+  "name": "Smart Shortlisting Engine",
+  "description": "An intelligent candidate shortlisting and resume ranking engine matching candidates against job descriptions with evidence-backed insights.",
+  "requestFramePermissions": []
+}
