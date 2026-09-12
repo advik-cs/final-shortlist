@@ -1,10 +1,10 @@
-﻿/**
+/**
  * InternLoom Centralized Frontend API Layer.
  * Communicates with the 100% local FastAPI backend.
  * Zero external AI / Zero API keys.
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
 
 export interface HealthResponse {
   status: string;

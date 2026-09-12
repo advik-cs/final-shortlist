@@ -1,0 +1,10 @@
+{
+  "name": "final-shortlist",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "python -m uvicorn server:app --reload",
+    "start": "python -m uvicorn server:app --host 0.0.0.0 --port 8000"
+  }
+}
